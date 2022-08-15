@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Angelokhare, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="style.css">
+    <title>Angelokhare</title>
+</head>
+<body class="back-body">
+    <div style=" margin-top: -10%; padding-top: 10%; margin-bottom: -5%;">
+        <img class="fut" style="margin-bottom: -5%; margin-left: 2%; width: 10vw;" src="https://img.icons8.com/ios-filled/100/000000/spotify.png"/>
+        <img class="fat hid" style="margin-bottom: -5%; margin-left: 2%; width: 10vw;" src="https://img.icons8.com/ios-filled/100/1DB954/spotify.png"/>
+        <h1 class="greetings" style="">Throwback <span style="color: #0d446e; font-family: 'Dancing Script', cursive;"> Thursday</span></h1>
+    </div>
+    <img style="" class="angelo-dis" src="angelo-child.png" alt="">
+
+    <script>
+
+var audio = new Audio("jayz.mp3");
+document.querySelector(".fut").addEventListener("click", ()=>{
+document.querySelector(".fut").classList.add("hid")
+document.querySelector(".fat").classList.remove("hid")
+audio.play();
+audio.loop=true;
+
+})
+
+document.querySelector(".fat").addEventListener("click", ()=>{
+document.querySelector(".fat").classList.add("hid")
+document.querySelector(".fut").classList.remove("hid")
+audio.pause();
+
+})
+
+    </script>
+</body>
+</html>
